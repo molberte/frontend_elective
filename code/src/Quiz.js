@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
+import './index.css';
 import photo_priest from './Priest.png'
-import photo_zendaya from './Zendaya'
-import photo_edward from './Edward.png'
+import photo_zendaya from './Zendaya.png' 
+import photo_edward from './Edvard.png'
 
-export default function App() {
+const Quiz = function() {
 	const questions = [
 		{
-			questionText: '1. Choose one:',
+			questionText: 'Choose one:',
 			answerOptions: [
 				{ answerText: 'Dream', isAnswerNumber: 1 },
 				{ answerText: 'Discover', isAnswerNumber: 2 },
@@ -14,7 +15,7 @@ export default function App() {
 			],
 		},
 		{
-			questionText: '2. Choose one:',
+			questionText: 'Choose one:',
 			answerOptions: [
 				{ answerText: 'Protect', isAnswerNumber: 1 },
 				{ answerText: 'Seek', isAnswerNumber: 2 },
@@ -22,7 +23,7 @@ export default function App() {
 			],
 		},
 		{
-			questionText: '3. Choose one:',
+			questionText: 'Choose one:',
 			answerOptions: [
 				{ answerText: 'Glitter', isAnswerNumber: 1 },
 				{ answerText: 'Shine', isAnswerNumber: 2 },
@@ -30,7 +31,7 @@ export default function App() {
 			],
 		},
 		{
-			questionText: '4. Choose one:',
+			questionText: 'Choose one:',
 			answerOptions: [
 				{ answerText: 'Love', isAnswerNumber: 1 },
 				{ answerText: 'Trust', isAnswerNumber: 2 },
@@ -38,7 +39,7 @@ export default function App() {
 			],
 		},
 		{
-			questionText: '5. Choose one:',
+			questionText: 'Choose one:',
 			answerOptions: [
 				{ answerText: 'Forever', isAnswerNumber: 1 },
 				{ answerText: 'Once', isAnswerNumber: 2 },
@@ -46,7 +47,7 @@ export default function App() {
 			],
 		},
 		{
-			questionText: '6. Choose one:',
+			questionText: 'Choose one:',
 			answerOptions: [
 				{ answerText: 'Impress', isAnswerNumber: 1 },
 				{ answerText: 'Advise', isAnswerNumber: 2 },
@@ -54,7 +55,7 @@ export default function App() {
 			],
 		},
 		{
-			questionText: '7. Choose one:',
+			questionText: 'Choose one:',
 			answerOptions: [
 				{ answerText: 'Rain', isAnswerNumber: 1 },
 				{ answerText: 'Sun', isAnswerNumber: 2 },
@@ -67,16 +68,26 @@ export default function App() {
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 
+/*	For shuffling questions:
+
+	const numOfCrushes = 10
+	const shuffleQuestions = (q)=> {
+		for (let i = numOfCrushes - 1; i > 0; i -= 1) {
+			const j = Math.floor(Math.random() * (questions.length - 1));
+			[q[i], q[j]] = [q[j], q[i]];
+		}
+		return q
+};*/
+
 	const handleAnswerOptionClick = (isAnswerNumber) => {
 		setScore(score + isAnswerNumber);
-		
 
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < questions.length) {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
-		}
+		};
 	};
 
 
@@ -94,13 +105,11 @@ export default function App() {
 	return (
 		<div className='app'>
 			{showScore ? (
-				<div className='score-section'>
-					<figure>
-						<span>
+				<div className='result-section'>
+					<img src={giveResultForOne(score)[1]} class="result-image"/>
+					<div class="result-text">
 						<b>You get {giveResultForOne(score)[0]}!</b>
-						</span>
-						<img src={giveResultForOne(score)[1]} />
-					</figure>
+					</div>
 				</div>
 			) : (
 				<>
@@ -119,4 +128,7 @@ export default function App() {
 			)}
 		</div>
 	);
-}
+};
+
+export default Quiz;
+
