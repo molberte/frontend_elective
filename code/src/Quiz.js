@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './index.css';
-import photo_priest from './Priest.png'
-import photo_zendaya from './Zendaya.png' 
-import photo_edward from './Edvard.png'
+import './quiz.css';
+import photo_priest from './CrushesImgs/Priest.png'
+import photo_zendaya from './CrushesImgs/Zendaya.png' 
+import photo_edward from './CrushesImgs/Edward.png'
 
 const Quiz = function() {
 	const questions = [
@@ -103,29 +103,31 @@ const Quiz = function() {
 
 
 	return (
-		<div className='app'>
-			{showScore ? (
-				<div className='result-section'>
-					<img src={giveResultForOne(score)[1]} class="result-image"/>
-					<div class="result-text">
-						<b>You get {giveResultForOne(score)[0]}!</b>
-					</div>
-				</div>
-			) : (
-				<>
-					<div className='question-section'>
-						<div className='question-count'>
-							<span>Question {currentQuestion + 1}</span>/{questions.length}
+		<div className='quiz'>
+			<div className='box-section'>
+				{showScore ? (
+					<div className='result-section'>
+						<img src={giveResultForOne(score)[1]} alt={giveResultForOne(score)[0]} class="result-image"/>
+						<div class="result-text">
+							<b>You get {giveResultForOne(score)[0]}!</b>
 						</div>
-						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
-					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.isAnswerNumber)}>{answerOption.answerText}</button>
-						))}
-					</div>
-				</>
-			)}
+				) : (
+					<>
+						<div className='question-section'>
+							<div className='question-count'>
+								<span>Question {currentQuestion + 1}</span>/{questions.length}
+							</div>
+							<div className='question-text'>{questions[currentQuestion].questionText}</div>
+						</div>
+						<div className='answer-section'>
+							{questions[currentQuestion].answerOptions.map((answerOption) => (
+								<button onClick={() => handleAnswerOptionClick(answerOption.isAnswerNumber)}>{answerOption.answerText}</button>
+							))}
+						</div>
+					</>
+				)}
+			</div>
 		</div>
 	);
 };

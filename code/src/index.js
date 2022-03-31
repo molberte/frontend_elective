@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
-import Quiz from './Quiz';
+import './index.css';
+import App from './App';
 
-const App = function () {
-  return (
-    <Quiz/>
-  );
-};
-
-render(<App />, document.getElementById('app'));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
