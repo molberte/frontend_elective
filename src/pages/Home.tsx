@@ -18,8 +18,8 @@ export const Home = () => {
                 <Card.Text>
                   <p>Here our pages</p>
                 </Card.Text>
-                <Card.Link href="/about">About page</Card.Link>
-                <Card.Link href="/quiz">Crushes Quiz</Card.Link>
+                <Card.Link href="/About">About page</Card.Link>
+                <Card.Link href="/Quiz">Crushes Quiz</Card.Link>
               </Card.Body>
             </Card>
           </Col>
