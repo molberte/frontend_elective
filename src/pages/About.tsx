@@ -9,7 +9,7 @@ export const About = () => {
     navigate(-1)
   }
   return (
-    <Container className="About">
+    <Container className="about">
       <Row className="about-body">
         <Col>
           <h1>About our project!</h1>

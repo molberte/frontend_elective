@@ -11,7 +11,7 @@ import { Quiz } from './src/pages/Quiz'
 
 export const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <NavBar />
         <Routes>

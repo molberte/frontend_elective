@@ -3,7 +3,7 @@ import { Container, Card, Row, Col } from 'react-bootstrap'
 
 export const Home = () => {
   return (
-    <div className="Home">
+    <div className="home">
       <Container>
         <Row className="home-main-row">
           <Col>
