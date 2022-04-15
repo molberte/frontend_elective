@@ -1,10 +1,11 @@
 import React from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { NavBarStyled } from './NavBar.styled'
 
 export const NavBar = () => {
   return (
-    <div className="NavBar">
+    <NavBarStyled>
       <Navbar sticky="top" expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -18,6 +19,6 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    </NavBarStyled>
   )
 }

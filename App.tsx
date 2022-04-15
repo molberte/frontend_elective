@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //module image + add to declarations
 import './App.css'
-import { NavBar } from './src/components/NavBar'
+import { NavBar } from './src/components/NavBar/NavBar'
 import { Footer } from './src/components/Footer/Footer'
 import { About } from './src/pages/About'
 import { Contact } from './src/pages/Contact'
