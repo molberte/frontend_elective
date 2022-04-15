@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //module image + add to declarations
 import './App.css'
 
-import { About } from './pages/About'
-import { Contact } from './pages/Contact'
-import { Home } from './pages/Home'
-import { Quiz } from './pages/Quiz'
+import { About } from './src/pages/About'
+import { Contact } from './src/pages/Contact'
+import { Home } from './src/pages/Home'
+import { Quiz } from './src/pages/Quiz'
 
 export const App = () => {
   return (
