@@ -2,7 +2,8 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //module image + add to declarations
 import './App.css'
-
+import { NavBar } from './src/components/NavBar'
+import { Footer } from './src/components/Footer'
 import { About } from './src/pages/About'
 import { Contact } from './src/pages/Contact'
 import { Home } from './src/pages/Home'
@@ -12,12 +13,14 @@ export const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/quiz" element={<Quiz />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )
