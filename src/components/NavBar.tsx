@@ -11,9 +11,9 @@ export const NavBar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
               <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/contact">Contact</Link>
-              <Link to="/quiz">Quiz</Link>
+              <Link to="/About">About</Link>
+              <Link to="/Contact">Contact</Link>
+              <Link to="/Quiz">Quiz</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
