@@ -15,7 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "semver": "^7.3.7"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
