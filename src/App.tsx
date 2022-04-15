@@ -8,7 +8,7 @@ export const App = () => {
   return (
     <>
       <h1>
-        React - {process.env.NODE_ENV} {process.env.name}{' '}
+        ReactNew - {process.env.NODE_ENV} {process.env.name}{' '}
       </h1>
       <img src={IMAGE} alt="Heart Logo" width="300" height="300" />
       <ClickCounter />
