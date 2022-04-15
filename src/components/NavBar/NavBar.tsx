@@ -6,7 +6,7 @@ import { NavBarStyled } from './NavBar.styled'
 export const NavBar = () => {
   return (
     <NavBarStyled>
-      <Navbar sticky="top" expand="lg">
+      <Navbar sticky="top" expand="lg" className="NavBar">
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
