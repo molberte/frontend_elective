@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //module image + add to declarations
 import './App.css'
 import { NavBar } from './src/components/NavBar'
-import { Footer } from './src/components/Footer'
+import { Footer } from './src/components/Footer/Footer'
 import { About } from './src/pages/About'
 import { Contact } from './src/pages/Contact'
 import { Home } from './src/pages/Home'
