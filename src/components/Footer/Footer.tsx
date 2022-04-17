@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <FooterStyled>
       <Row className="social-media">
-        <h3>Это футер</h3>
+        Made by Kseniya Evdokimova, Kseniya Kudasheva, Alyssa Ivanova
       </Row>
     </FooterStyled>
   )

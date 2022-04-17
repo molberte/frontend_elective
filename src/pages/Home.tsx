@@ -6,12 +6,9 @@ export const Home = () => {
     <div className="home">
       <Container>
         <Row className="home-main-row">
-          <Col>
-            <Card style={{ width: '800px' }}>
+          <Col className="col-4">
+            <Card style={{ width: '80vh' }}>
               <Card.Body>
-                <Card.Title>
-                  <h1>Card Title</h1>
-                </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
                   <h2>Card Subtitle</h2>
                 </Card.Subtitle>
@@ -19,6 +16,7 @@ export const Home = () => {
                   <p>Here our pages</p>
                 </Card.Text>
                 <Card.Link href="/About">About page</Card.Link>
+                <Card.Link href="/Quiz">Crushes Quiz</Card.Link>
                 <Card.Link href="/Quiz">Crushes Quiz</Card.Link>
               </Card.Body>
             </Card>
