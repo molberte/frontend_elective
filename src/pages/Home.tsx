@@ -19,7 +19,7 @@ export const Home = () => {
                   Kseniya&#39;<s></s> Crushes
                 </Card.Link>
                 <Card.Link href="/Gallery">Ksu&#39;s Crushes</Card.Link>
-                <Card.Link href="/Gallery">Alisa&#39;s Quiz</Card.Link>
+                <Card.Link href="/Gallery">Alisa&#39;s Crushes</Card.Link>
               </Card.Body>
             </Card>
           </Col>
