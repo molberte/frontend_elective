@@ -13,7 +13,7 @@ export const NavBar = () => {
             <Nav>
               <Link to="/">Home</Link>
               <Link to="/About">About</Link>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/Gallery">Ksu&#39; Crushes</Link>
               <Link to="/Quiz">Quiz</Link>
             </Nav>
           </Navbar.Collapse>

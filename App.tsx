@@ -5,7 +5,7 @@ import './App.css'
 import { NavBar } from './src/components/NavBar/NavBar'
 import { Footer } from './src/components/Footer/Footer'
 import { About } from './src/pages/About'
-import { Contact } from './src/pages/Contact'
+import { Gallery } from './src/components/Gallery/Gallery'
 import { Home } from './src/pages/Home'
 import { Quiz } from './src/pages/Quiz'
 
@@ -17,7 +17,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/quiz" element={<Quiz />} />
         </Routes>
         <Footer />
