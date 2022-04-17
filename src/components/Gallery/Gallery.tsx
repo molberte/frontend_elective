@@ -7,7 +7,7 @@ import Tadashi from '../../assets/Crushes/Tadashi.jpg'
 import Joe from '../../assets/Crushes/Joe.jpg'
 import Nick from '../../assets/Crushes/Nick.png'
 
-export const Footer = () => {
+export const Gallery = () => {
   const photos = [
     {
       src: Priest,
