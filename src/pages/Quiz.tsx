@@ -1,5 +1,6 @@
 import React from 'react'
+import { QuizCard } from '../components/QuizCard/QuizCard'
 
 export const Quiz = () => {
-  return <div className="quiz"></div>
+  return <QuizCard />
 }
