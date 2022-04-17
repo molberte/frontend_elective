@@ -14,7 +14,7 @@ export const NavBar = () => {
               <Link to="/">Home</Link>
               <Link to="/About">About</Link>
               <Link to="/Gallery">Crushes</Link>
-              <Link to="/Quiz">Quiz</Link>
+              <Link to="/Quiz">Test</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
