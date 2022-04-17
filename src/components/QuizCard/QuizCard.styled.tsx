@@ -12,7 +12,7 @@ export const QuizCardStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   * {
@@ -21,6 +21,7 @@ export const QuizCardStyled = styled.div`
   }
 
   .box-section {
+    margin-top: -4%;
     background-color: rgba(255, 255, 255, 0.79);
     width: 450px;
     min-height: 200px;
