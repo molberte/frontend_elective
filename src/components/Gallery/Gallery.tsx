@@ -2,55 +2,45 @@ import Album from 'react-photo-album'
 import React from 'react'
 import { GalleryStyled } from './Gallery.styled'
 
-import Priest from '../../assets/Crushes/Priest.jpg'
-import Tadashi from '../../assets/Crushes/Tadashi.jpg'
-import Joe from '../../assets/Crushes/Joe.jpg'
-import Nick from '../../assets/Crushes/Nick.png'
-
-import Darcy from '../../assets/Crushes/MrDarcy.jpg'
-import FredGeorge from '../../assets/Crushes/FredGeorge.jpg'
-import Sherlock from '../../assets/Crushes/Sherlock.jpg'
-import Jared from '../../assets/Crushes/Jared.jpg'
-
 export const Gallery = () => {
   const photos = [
     {
-      src: Priest,
+      src: 'https://i.imgur.com/WmNfVCB.jpg',
       width: 600,
       height: 900,
     },
     {
-      src: Tadashi,
+      src: 'https://i.imgur.com/E8woOHw.jpg',
       width: 600,
       height: 528,
     },
     {
-      src: Joe,
+      src: 'https://i.imgur.com/gfC1DjV.jpg',
       width: 1200,
       height: 675,
     },
     {
-      src: Nick,
+      src: 'https://i.imgur.com/iKAaTN2.png',
       width: 787,
       height: 799,
     },
     {
-      src: Darcy,
+      src: 'https://i.imgur.com/3sWfO7z.jpg',
       width: 500,
       height: 680,
     },
     {
-      src: FredGeorge,
-      width: 1384,
-      height: 899,
+      src: 'https://i.imgur.com/x2OA9uR.jpg',
+      width: 1138,
+      height: 742,
     },
     {
-      src: Jared,
+      src: 'https://i.imgur.com/xwNFvJ1.jpg',
       width: 1000,
       height: 1500,
     },
     {
-      src: Sherlock,
+      src: 'https://i.imgur.com/v3JjFxh.jpg',
       width: 1200,
       height: 750,
     },
