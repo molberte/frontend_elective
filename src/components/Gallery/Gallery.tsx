@@ -1,4 +1,4 @@
-import PhotoAlbum from 'react-photo-album'
+import Album from 'react-photo-album'
 import React from 'react'
 import { GalleryStyled } from './Gallery.styled'
 
@@ -57,7 +57,7 @@ export const Gallery = () => {
   ]
   return (
     <GalleryStyled>
-      <PhotoAlbum layout="masonry" photos={photos} />
+      <Album layout="masonry" photos={photos} />
     </GalleryStyled>
   )
 }

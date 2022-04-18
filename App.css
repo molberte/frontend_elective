@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif !important;
-    background-color: rgb(233, 212, 236);
+    background-color: #f7ebff;
   }
   
   /* START: HOME page styling */
@@ -21,11 +21,18 @@ body {
   }
   
   .card {
-    border: 5px solid #f7e6fa;
+    border: 5px solid #75538d;
     border-radius: 8px;
-    background-color: rgb(240, 234, 234);
+    background-color: #efeef0;
   }
   
+  .card-link {
+    color: #4d365e;
+  }
+  .card-body p {
+    margin-top: 20px;
+    color: #23192b;
+  }
   /* START: ABOUT page styling */
   
   .about {
@@ -51,7 +58,9 @@ body {
     margin-top: 20px;
     padding: 0 50px;
   }
-  
+  .about h5 {
+    margin: 2% 12%;
+  }
   .stack-column {
     display: flex !important;
     flex-direction: column !important;
@@ -64,7 +73,7 @@ body {
     align-items: center;
     margin: 10px auto;
   }
-  
- h4 {
-   margin: 5px 60px;
- }
+h2 {
+  color: #362b3f;
+  text-align: center;
+}

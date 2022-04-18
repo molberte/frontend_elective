@@ -13,10 +13,10 @@ export const About = () => {
       <Row className="about-body">
         <Col>
           <h1>About our project!</h1>
-          <h4>
+          <h5>
             This project aims to entertain you. You can look at Our Crushes
             Gallery or take The Compatibility Test. Enjoy!
-          </h4>
+          </h5>
           <div className="back-next-button">
             <Button onClick={handleBack} variant="link">
               Back
